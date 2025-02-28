@@ -8,7 +8,7 @@ const AppContext = createContext();
 export const AppProvider = ({children})=>{
 
   //specify usestates to be shared accross pages/components
-  const [currentPage, setCurrentPage] = useState('landing');
+  const [currentPage, setCurrentPage] = useState('home');
   const [menuOpen, setMenuOpen] = useState(false);
 
   //set the usestates to be available when components is within wrapper
