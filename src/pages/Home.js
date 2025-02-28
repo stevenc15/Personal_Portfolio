@@ -23,9 +23,9 @@ const HomePage = () => {
                 <section className="links-section">
                     <h2 className="links-heading">Checkout my Links!</h2>
                     <div className="links-container">
-                        <a href="stevenacamachoperez@gmail.com" className="social-link">Email</a>
-                        <a href="https://github.com/stevenc15" className="social-link">GitHub</a>
-                        <a href="https://www.linkedin.com/in/steven-camacho-96a818268/" className="social-link">LinkedIn</a>
+                        <a href="mailto:stevenacamachoperez@gmail.com" className="social-link">Email</a>
+                        <a href="https://github.com/stevenc15" className="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/steven-camacho-96a818268/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </section>
             </div>
