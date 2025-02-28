@@ -4,7 +4,7 @@ import './App.css';
 import { AppProvider } from './components/appContext.js';
 import Layout from './pages/Layout.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   return(

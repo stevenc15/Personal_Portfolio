@@ -71,9 +71,7 @@ const Layout = () => {
                 {currentPage === 'contact' && <ContactPage />}
             </main>
             
-            <footer className="footer">
-                <p>© {new Date().getFullYear()} Steven Camacho. All rights reserved.</p>
-            </footer>
+            
         </div>
     );
 };
