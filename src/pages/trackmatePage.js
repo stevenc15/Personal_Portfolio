@@ -8,6 +8,7 @@ import inputVideoNotEntered from './trackmate/images/inputVideoNotEntered.png';
 import processedVideoDownload from './trackmate/images/processed_video_download.png';
 import trackedFirstFrame from './trackmate/images/Tracked_first_frame.png';
 import './css/trackmatePage.css';
+import demoVideo from '.trackmate/images/';
 
 const TrackMatePage = () => {
     const { setCurrentPage } = useApp();
@@ -153,6 +154,14 @@ const TrackMatePage = () => {
                             <div className="demo-card">
                                 <div className="demo-placeholder">
                                     {showDemo ? (
+                                        <div className="mt-24 aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+                                            {/* placeholder for video */}
+                                            <video 
+                                            className="w-full h-full object-contain"
+                                            controls
+                                            src={demoVideo} 
+                                            />
+                                        </div>
                                         <div className="ratio ratio-16x9">
                                             <iframe 
                                                 src="https://www.youtube.com/embed/PibIhiw_kro" 
