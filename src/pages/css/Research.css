@@ -1,0 +1,46 @@
+.research-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.research-section {
+    margin-bottom: 40px;
+}
+
+.research-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.research-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.research-item h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.research-item p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.placeholder {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+}
