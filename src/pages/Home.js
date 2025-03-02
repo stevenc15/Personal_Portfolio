@@ -24,7 +24,8 @@ const HomePage = () => {
     
     return (
         <div>
-            {/* Hero Section */}
+
+            {/* section for name intro and links*/}
             <section id="home" className="hero-section">
                 <div className="container">
                     <div className="row">
@@ -57,7 +58,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* About Section (placeholder) */}
+            {/* About Me section */}
             <section id="about" className="about-section">
                 <div className="container">
                     <div className="section-title">

@@ -5,6 +5,8 @@ import ProjectsPage from './Projects.js';
 import HomePage from './Home.js';
 import ResearchPage from './Research.js';
 import ContactPage from './Contact.js';
+import UpperLimbPage from './upperlimbPage.js';
+import TrackMatePage from './trackmatePage.js';
 import './css/Layout.css'; // We'll create this CSS file separately
 
 const Layout = () => {
@@ -14,7 +16,7 @@ const Layout = () => {
         <nav className="navbar">
             <div className="nav-container">
 
-                {/* Desktop Navigation */}
+                {/* upper menu navigation*/}
                 <div className="desktop-nav">
                     <button
                         onClick={() => setCurrentPage('home')}
@@ -69,6 +71,8 @@ const Layout = () => {
                 {currentPage === 'research' && <ResearchPage/>}
                 {currentPage === 'resume' && <ResumePage />}
                 {currentPage === 'contact' && <ContactPage />}
+                {currentPage === 'trackmate' && <TrackMatePage />}
+                {currentPage === 'upperlimb' && <UpperLimbPage />}
             </main>
             
             
