@@ -155,7 +155,7 @@ const TrackMatePage = () => {
                                     {showDemo ? (
                                         <div className="ratio ratio-16x9">
                                             <iframe 
-                                                src="https://www.youtube.com/watch?v=PibIhiw_kro" 
+                                                src="https://www.youtube.com/embed/PibIhiw_kro" 
                                                 title="TrackMate Demo"
                                                 allowFullScreen
                                             ></iframe>
