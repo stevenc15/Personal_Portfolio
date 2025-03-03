@@ -157,7 +157,6 @@ const TrackMatePage = () => {
                                             <iframe 
                                                 src="https://www.youtube.com/embed/PibIhiw_kro" 
                                                 title="TrackMate Demo"
-                                                allowFullScreen
                                             ></iframe>
                                         </div>
                                     ) : (
