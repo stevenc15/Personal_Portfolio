@@ -132,7 +132,7 @@ const UpperLimbPage = () => {
                     <div className="github-card">
                         <h3>Explore the Code</h3>
                         <p>Check out the open-source repository on GitHub to learn more about how upperlimb works.</p>
-                        <a href="https://github.com/stevenc15/SD1-project" 
+                        <a href="https://github.com/stevenc15/upper-limb-joint-prediction" 
                            className="btn btn-github" 
                            target="_blank" 
                            rel="noopener noreferrer">
