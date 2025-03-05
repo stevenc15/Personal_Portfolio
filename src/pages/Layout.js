@@ -58,25 +58,71 @@ const Layout = () => {
                     </button>
                 </div>
 
-                {/* Mobile Navigation */}
-            <div className="mobile-nav">
-                <button 
-                    className="mobile-menu-toggle" 
-                    onClick={() => setMenuOpen(!menuOpen)}
-                >
-                    ☰
-                </button>
+                {/* Mobile Navigation Toggle */}
+                <div className="mobile-nav-toggle">
+                    <button 
+                        className="menu-toggle" 
+                        onClick={() => setMenuOpen(!menuOpen)}
+                    >
+                        {menuOpen ? (
+                            <i className="bi bi-x-lg"></i> // Close icon
+                        ) : (
+                            <i className="bi bi-list"></i> // Hamburger icon
+                        )}
+                    </button>
+                </div>
 
+                {/* Mobile Navigation Menu */}
                 {menuOpen && (
-                    <div className="mobile-menu">
-                        <button onClick={() => { setCurrentPage('home'); setMenuOpen(false); }} className="nav-item">Home</button>
-                        <button onClick={() => { setCurrentPage('projects'); setMenuOpen(false); }} className="nav-item">Projects</button>
-                        <button onClick={() => { setCurrentPage('research'); setMenuOpen(false); }} className="nav-item">Research</button>
-                        <button onClick={() => { setCurrentPage('contact'); setMenuOpen(false); }} className="nav-item">Contact</button>
-                        <button onClick={() => { setCurrentPage('resume'); setMenuOpen(false); }} className="nav-item">Resume</button>
+                    <div className="mobile-nav-menu">
+                        <button
+                            onClick={() => {
+                                setCurrentPage('home');
+                                setMenuOpen(false);
+                            }}
+                            className={`mobile-nav-item ${currentPage === 'home' ? 'active' : ''}`}
+                        >
+                            <span className="nav-text">Home</span>
+                        </button>
+                        <button
+                            onClick={() => {
+                                setCurrentPage('projects');
+                                setMenuOpen(false);
+                            }}
+                            className={`mobile-nav-item ${currentPage === 'projects' ? 'active' : ''}`}
+                        >
+                            <span className="nav-text">Projects</span>
+                        </button>
+                        <button
+                            onClick={() => {
+                                setCurrentPage('research');
+                                setMenuOpen(false);
+                            }}
+                            className={`mobile-nav-item ${currentPage === 'research' ? 'active' : ''}`}
+                        >
+                            <span className="nav-text">Research</span>
+                        </button>
+                        <button
+                            onClick={() => {
+                                setCurrentPage('contact');
+                                setMenuOpen(false);
+                            }}
+                            className={`mobile-nav-item ${currentPage === 'contact' ? 'active' : ''}`}
+                        >
+                            <span className="nav-text">Contact</span>
+                        </button>
+                        <button
+                            onClick={() => {
+                                setCurrentPage('resume');
+                                setMenuOpen(false);
+                            }}
+                            className={`mobile-nav-item ${currentPage === 'resume' ? 'active' : ''}`}
+                        >
+                            <span className="nav-text">Resume</span>
+                        </button>
                     </div>
                 )}
-            </div>
+                
             </div>
         </nav>
     );
