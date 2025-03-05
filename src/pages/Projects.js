@@ -7,12 +7,12 @@ import { useApp } from '../components/appContext.js';
 const projects = [
     {
         title: "TrackMate",
-        description: "A machine learning-based soccer tracking system that provides accurate tracking for any player",
+        description: "A machine learning-based soccer software application that provides accurate tracking for any player.",
         page: "trackmate"
     },
     {
-        title: "Upper Limb Joint Prediction",
-        description: "A data analysis project using regression techniques to predict house prices based on Kaggle's dataset.",
+        title: "Upper Limb Joint Prediction Using IMUs",
+        description: "A deep-learning based application that predicts upper limb movement using IMUs.",
         page: "upperlimb"
     },
     
