@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/Home.css';
+import trackmateHome from './trackmate/images/home.png';
+import visualization from './upperlimb/images/visualization.png';
+
+import { useApp } from '../components/appContext.js';
 
 const HomePage = () => {
     const [typingText, setTypingText] = useState("");
@@ -22,6 +26,8 @@ const HomePage = () => {
         return () => clearInterval(typingInterval);
     }, []);
     
+    const { currentPage, setCurrentPage} = useApp();
+
     return (
         <div>
 
@@ -85,7 +91,77 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-
+            
+            {/* Projects Section */}
+            <section id="projects" className="projects-section">
+                <div className="container">
+                    <div className="section-title">
+                        <h2>Checkout my Projects!</h2>
+                    <div className="underline"></div>
+                </div>
+                <div className="row">
+                {[
+                    {
+                        title: "TrackMate",
+                        description: "A machine learning-based soccer tracking system that provides accurate tracking for any player.",
+                        skills: ["React", "Javascript", "Python", "Machine Learning"],
+                        image: trackmateHome, // Replace with actual project screenshot
+                        githubLink: "https://github.com/stevenc15/TrackMate",
+                        page: "trackmate"
+                    },
+                    {
+                        title: "Upper Limb Joint Prediction Using IMUs",
+                        description: "A deep-learning based application that predicts upper limb movement using IMUs.",
+                        skills: ["Python", "Project Management", "Data preprocessing"],
+                        image: visualization, // Replace with actual project screenshot
+                        githubLink: "https://github.com/stevenc15/upper-limb-joint-prediction",
+                        page: "upperlimb"
+                    }
+                ].map((project, index) => (
+                <div key={index} className="col-md-4 mb-4">
+                    <div className="project-card card h-100">
+                        <div className="project-image-container">
+                            <img 
+                                src={project.image} 
+                                className="card-img-top project-image" 
+                                alt={project.title} 
+                            />
+                        </div>
+                        <div className="card-body">
+                            <h5 className="card-title">{project.title}</h5>
+                            <p className="card-text">{project.description}</p>
+                            <div className="project-skills">
+                                {project.skills.map((skill, skillIndex) => (
+                                    <span key={skillIndex} className="skill-badge">{skill}</span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="card-footer">
+                            <div className="d-flex justify-content-between">
+                                <a 
+                                    href={project.githubLink} 
+                                    className="btn btn-outline-dark btn-sm" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
+                                    <i className="bi bi-github me-1"></i>GitHub
+                                </a>
+                                <button
+                                    onClick={() => setCurrentPage(project.page)}
+                                    className={`nav-item ${currentPage === project.page ? 'active' : ''}`}                                   
+                                >
+                                    <span className="btn btn-primary">View Project</span>
+                                </button>
+                                    {/*<i className="bi bi-eye-fill me-1"></i>Check it out!*/}
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
             {/* Footer */}
             <footer className="footer">
                 <div className="container text-center">
