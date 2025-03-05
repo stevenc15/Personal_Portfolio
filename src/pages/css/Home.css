@@ -303,7 +303,6 @@ body {
     }
 }
 
-@media (max-width: 480px) {
     .name-heading {
         font-size: 2rem;
     }
@@ -329,7 +328,8 @@ body {
 
     .projects-section {
         background-color: white;
-        padding: 100px 0;
+        padding: 35px 0;
+        background-color: var(--light-gray) !important;
     }
 
     .project-card {
@@ -406,4 +406,3 @@ body {
             height: 200px;
         }
     }
-}
