@@ -96,14 +96,47 @@ button {
 
 @media (max-width: 768px) {
     .desktop-nav {
-        display: none;
+        display: none; /* Hide desktop menu on mobile */
     }
-    
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .mobile-menu-toggle {
-        display: block;
+        display: block; /* Show the mobile menu button */
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
     }
-    
+
     .mobile-menu {
         display: flex;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    .mobile-menu .nav-item {
+        color: white;
+        background: none;
+        border: none;
+        padding: 10px;
+        text-align: left;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .mobile-menu .nav-item:hover {
+        background-color: #555;
     }
 }
