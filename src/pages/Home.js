@@ -4,6 +4,8 @@ import './css/Home.css';
 import trackmateHome from './trackmate/images/home.png';
 import visualization from './upperlimb/images/visualization.png';
 
+import { useApp } from '../components/appContext.js';
+
 const HomePage = () => {
     const [typingText, setTypingText] = useState("");
     const fullText = "Software Engineer • Problem Solver • Innovator";
@@ -24,6 +26,8 @@ const HomePage = () => {
         return () => clearInterval(typingInterval);
     }, []);
     
+    const { currentPage, setCurrentPage} = useApp();
+
     return (
         <div>
 
@@ -142,14 +146,14 @@ const HomePage = () => {
                                 >
                                     <i className="bi bi-github me-1"></i>GitHub
                                 </a>
-                                <a 
-                                    href={project.liveLink} 
-                                    className="btn btn-outline-primary btn-sm" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
+                                <button
+                                    onClick={() => setCurrentPage(project.page)}
+                                    className={`nav-item ${currentPage === project.page ? 'active' : ''}`}                                   
                                 >
-                                    <i className="bi bi-eye-fill me-1"></i>Live Demo
-                                </a>
+                                    <span className="btn btn-primary">View Project</span>
+                                </button>
+                                    {/*<i className="bi bi-eye-fill me-1"></i>Check it out!*/}
+                            
                             </div>
                         </div>
                     </div>
