@@ -58,6 +58,25 @@ const Layout = () => {
                     </button>
                 </div>
 
+                {/* Mobile Navigation */}
+            <div className="mobile-nav">
+                <button 
+                    className="mobile-menu-toggle" 
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    ☰
+                </button>
+
+                {menuOpen && (
+                    <div className="mobile-menu">
+                        <button onClick={() => { setCurrentPage('home'); setMenuOpen(false); }} className="nav-item">Home</button>
+                        <button onClick={() => { setCurrentPage('projects'); setMenuOpen(false); }} className="nav-item">Projects</button>
+                        <button onClick={() => { setCurrentPage('research'); setMenuOpen(false); }} className="nav-item">Research</button>
+                        <button onClick={() => { setCurrentPage('contact'); setMenuOpen(false); }} className="nav-item">Contact</button>
+                        <button onClick={() => { setCurrentPage('resume'); setMenuOpen(false); }} className="nav-item">Resume</button>
+                    </div>
+                )}
+            </div>
             </div>
         </nav>
     );
