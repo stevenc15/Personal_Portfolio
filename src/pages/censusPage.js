@@ -107,7 +107,7 @@ const UpperLimbPage = () => {
                            className="btn btn-github" 
                            target="_blank" 
                            rel="noopener noreferrer">
-                            <i className="bi bi-github me-2"></i>
+                            <i></i>
                             Click Here to check it out!
                         </a>
                     </div>
