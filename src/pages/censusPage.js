@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useApp } from '../components/appContext.js';
-import './css/censusPage.css';
+import './css/upperlimbPage.css';
 import start from './upperlimb/images/start.png';
 import NationWide from './upperlimb/images/NationWide.png';
 import chooseStates from './upperlimb/images/chooseStates.png';
