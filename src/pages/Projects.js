@@ -18,7 +18,7 @@ const projects = [
     {
         title: "Census Dashboard",
         description: "An interactive Streamlit dashboard built with American Community Survey (ACS) 5-Year Estimates data.",
-        page: "trackmate"
+        page: "census"
     },
 ];
 
