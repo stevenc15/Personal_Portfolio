@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/Home.css';
 import trackmateHome from './trackmate/images/home.png';
 import visualization from './upperlimb/images/visualization.png';
+import start from './upperlimb/images/start.png';
 
 import { useApp } from '../components/appContext.js';
 
@@ -121,7 +122,7 @@ const HomePage = () => {
                         title: "Census Dashboard",
                         description: "An interactive Streamlit dashboard built with American Community Survey (ACS) 5-Year Estimates data.",
                         skills: ["Python", "Pandas", "Data preprocessing"],
-                        image: trackmateHome, // Replace with actual project screenshot
+                        image: start, // Replace with actual project screenshot
                         githubLink: "https://github.com/stevenc15/Census_Dashboard",
                         page: "census"
                     },
