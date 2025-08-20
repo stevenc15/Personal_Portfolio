@@ -9,7 +9,7 @@ import { useApp } from '../components/appContext.js';
 
 const HomePage = () => {
     const [typingText, setTypingText] = useState("");
-    const fullText = "Software Engineer • Problem Solver • Innovator";
+    const fullText = "Problem Solver • Innovator";
     const [activeSection, setActiveSection] = useState("about");
     
     // Typing animation effect
