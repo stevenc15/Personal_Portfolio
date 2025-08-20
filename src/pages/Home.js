@@ -76,12 +76,12 @@ const HomePage = () => {
                             <div className="row">
                                 <div className="col-md-6">
                                     <h3>Who I Am</h3>
-                                    <p>Hi! My name is Steven Camacho, I am a recent grad from the University of Central Florida with a B.S. in Computer Science with a passion for software engineering and the solutions it can bring to the world. I love to learn and gain new experiences!</p>
+                                    <p>Hi! My name is Steven Camacho, and I am currently pursuing my Master’s in Computer Science at the University of Central Florida. I previously earned my B.S. in Computer Science at UCF, and I’m passionate about machine learning and the innovative solutions it can bring to the world. I’m always eager to learn, grow, and gain new experiences!</p>
                                 </div>
                                 <div className="col-md-6">
                                     <h3>My Skills</h3>
                                     <div className="skills-container">
-                                        {["JavaScript", "React", "Node.js", "Python", "Java", "Data Structures", "Algorithms"].map((skill, index) => (
+                                        {["JavaScript", "React", "Node.js", "Python", "Java", "Data Structures", "Algorithms", "Pandas"].map((skill, index) => (
                                             <span key={index} className="skill-badge">{skill}</span>
                                         ))}
                                     </div>
@@ -116,7 +116,15 @@ const HomePage = () => {
                         image: visualization, // Replace with actual project screenshot
                         githubLink: "https://github.com/stevenc15/upper-limb-joint-prediction",
                         page: "upperlimb"
-                    }
+                    },
+                    {
+                        title: "Census Dashboard",
+                        description: "An interactive Streamlit dashboard built with American Community Survey (ACS) 5-Year Estimates data.",
+                        skills: ["Python", "Pandas", "Data preprocessing"],
+                        image: trackmateHome, // Replace with actual project screenshot
+                        githubLink: "https://github.com/stevenc15/Census_Dashboard",
+                        page: "census"
+                    },
                 ].map((project, index) => (
                 <div key={index} className="col-md-4 mb-4">
                     <div className="project-card card h-100">
