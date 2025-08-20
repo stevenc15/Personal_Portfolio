@@ -15,7 +15,11 @@ const projects = [
         description: "A deep-learning based application that predicts upper limb movement using IMUs.",
         page: "upperlimb"
     },
-    
+    {
+        title: "Census Dashboard",
+        description: "An interactive Streamlit dashboard built with American Community Survey (ACS) 5-Year Estimates data.",
+        page: "trackmate"
+    },
 ];
 
 const ProjectsPage = () => {
