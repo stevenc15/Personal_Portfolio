@@ -139,7 +139,7 @@ const Layout = () => {
                 {currentPage === 'contact' && <ContactPage />}
                 {currentPage === 'trackmate' && <TrackMatePage />}
                 {currentPage === 'upperlimb' && <UpperLimbPage />}
-                {currentPage === 'census' && <UpperLimbPage />}
+                {currentPage === 'census' && <CensusPage />}
             </main>
             
             
