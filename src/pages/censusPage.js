@@ -97,6 +97,22 @@ const UpperLimbPage = () => {
                 </div>
             </section>
 
+            {/* github link */}
+            <section className="github-section">
+                <div className="container text-center">
+                    <div className="github-card">
+                        <h3>Explore the Interactive Dashboard</h3>
+                        <p>Check out the dashboard and explore Census data.</p>
+                        <a href="https://census-dashboard.streamlit.app/" 
+                           className="btn btn-github" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <i className="bi bi-github me-2"></i>
+                            Click Here to check it out!
+                        </a>
+                    </div>
+                </div>
+            </section>
 
             {/* github link */}
             <section className="github-section">
