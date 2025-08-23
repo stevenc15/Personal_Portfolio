@@ -143,6 +143,7 @@ const TrackMatePage = () => {
             </section>
 
             {/* demo vid section */}
+            {/* demo vid section */}
             <section className="demo-section">
                 <div className="container">
                     <div className="section-title">
@@ -151,7 +152,7 @@ const TrackMatePage = () => {
                     </div>
                     
                     <div className="row justify-content-center">
-                        <div className="col-lg-10">
+                        <div className="col-lg-8">
                             <div className="demo-card">
                                 <div className="demo-placeholder">
                                     {showDemo ? (
@@ -161,6 +162,8 @@ const TrackMatePage = () => {
                                                 title="TrackMate Demo"
                                                 width="100%"
                                                 height="400"
+                                                frameBorder="0"
+                                                allowFullScreen
                                             ></iframe>
                                         </div>
                                     ) : (
@@ -177,8 +180,8 @@ const TrackMatePage = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Example videos section */}
+            
+        {/* Example videos section */}
             <section className="examples-section">
                 <div className="container">
                     <div className="section-title">
