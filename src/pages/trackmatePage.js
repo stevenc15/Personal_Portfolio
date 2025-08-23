@@ -207,7 +207,7 @@ const TrackMatePage = () => {
                                             className="example-video"
                                             width="100%"
                                         >
-                                            <source src={exampleVideo1} type="video/mp4" />
+                                            <source src={exampleVideo2} type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -215,37 +215,6 @@ const TrackMatePage = () => {
                             </div>
                         </div>
                         
-                        <div className="col-lg-6 mb-4">
-                            <div className="example-card">
-                                <h4 className="example-title">Example 2</h4>
-                                <div className="example-videos">
-                                    <div className="example-video-item">
-                                        <h5>Original Input</h5>
-                                        <video 
-                                            controls 
-                                            className="example-video"
-                                            width="100%"
-                                        >
-                                            <source src={exampleVideo2} type="video/mp4" />
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                    <div className="example-video-item mt-3">
-                                        <h5>Processed Output</h5>
-                                        <video 
-                                            controls 
-                                            className="example-video"
-                                            width="100%"
-                                        >
-                                            <source src={exampleVideo2} type="video/mp4" />
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
                                                 
             {/* github link */}
