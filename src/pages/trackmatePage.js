@@ -209,7 +209,7 @@ const TrackMatePage = () => {
                                   Processed Video by TrackMate
                             </div>
                           </div>
-
+                        </div>
             {/* github link */}
             <section className="github-section">
                 <div className="container text-center">
