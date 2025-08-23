@@ -160,8 +160,7 @@ const TrackMatePage = () => {
                                             <iframe 
                                                 src="https://www.youtube.com/embed/PibIhiw_kro" 
                                                 title="TrackMate Demo"
-                                                width="100%"
-                                                height="400"
+                                                
                                                 frameBorder="0"
                                                 allowFullScreen
                                             ></iframe>
