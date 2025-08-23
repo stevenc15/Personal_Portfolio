@@ -155,6 +155,21 @@
     color: var(--green);
 }
 
+/* Add these new styles for full-width video */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .github-section {
     background-color: var(--light-gray);
     padding: 60px 0;
