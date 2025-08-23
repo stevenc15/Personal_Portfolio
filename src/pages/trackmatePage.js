@@ -8,6 +8,8 @@ import inputVideoNotEntered from './trackmate/images/inputVideoNotEntered.png';
 import processedVideoDownload from './trackmate/images/processed_video_download.png';
 import trackedFirstFrame from './trackmate/images/Tracked_first_frame.png';
 import './css/trackmatePage.css';
+import exampleVideo1 from './Example1.mp4';
+import exampleVideo2 from './Example2.mp4';
 
 const TrackMatePage = () => {
     const { setCurrentPage } = useApp();
@@ -173,6 +175,38 @@ const TrackMatePage = () => {
                     </div>
                 </div>
             </section>
+
+                <div style="font-size: 32px; color: black; font-weight: bold; margin-bottom: 20px;">
+                    Check out this example!
+                </div>
+
+                <div style="font-size: 24px; color: #333; margin-bottom: 15px;">
+                    Unprocessed Video
+                </div>
+
+            {/* placeholder for demo video */}
+                <div className="mt-24 aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+                    {/* placeholder for video */}
+                    <video 
+                        className="w-full h-full object-contain"
+                        controls
+                        src={exampleVideo1} 
+                    />
+               </div>
+
+            <div style="font-size: 24px; color: #333; margin-bottom: 15px;">
+                    Processed Video by TrackMate
+            </div>
+
+            {/* placeholder for demo video */}
+                <div className="mt-24 aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+                    {/* placeholder for video */}
+                    <video 
+                        className="w-full h-full object-contain"
+                        controls
+                        src={exampleVideo2} 
+                    />
+                </div>
 
             {/* github link */}
             <section className="github-section">
