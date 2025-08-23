@@ -214,7 +214,8 @@ const TrackMatePage = () => {
                                 </div>
                             </div>
                         </div>
-                    
+                    </div>
+                </div>                            
             </section>
                                                 
             {/* github link */}
