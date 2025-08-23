@@ -184,15 +184,13 @@ const TrackMatePage = () => {
                     Unprocessed Video
                 </div>
 
-            {/* placeholder for demo video */}
-                <div >
-                    {/* placeholder for video */}
-                    <video 
-                        className="w-3/4 mx-auto rounded-xl"
-                        controls
-                        src={exampleVideo1} 
-                    />
-               </div>
+            <div className="mt-12 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800" style={{ maxWidth: '800px', maxHeight: '450px' }}>
+                <video 
+                    className="w-full h-full object-cover"
+                    controls
+                    src={exampleVideo1} 
+                />
+            </div>
 
             <div style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
                     Processed Video by TrackMate
