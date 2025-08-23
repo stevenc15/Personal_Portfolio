@@ -210,7 +210,8 @@
     box-shadow: var(--hover-shadow);
     color: white;
 }
-* Examples Section Styles */
+
+/* Examples Section Styles */
 .examples-section {
     padding: 80px 0;
     background-color: #f8f9fa;
