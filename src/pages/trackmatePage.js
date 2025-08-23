@@ -180,36 +180,39 @@ const TrackMatePage = () => {
                     Check out this example!
                 </div>
 
-                        <div className="flex flex-col items-center mt-12 space-y-6">
+                        <div className="flex flex-col items-center mt-12 space-y-8">
 
-                            {/* First video and heading */}
-                              <div style={{ textAlign: 'center' }}>
-                                <div style={{ maxHeight: '25vh', maxWidth: '90vw', overflow: 'hidden', borderRadius: '16px', background: 'linear-gradient(to bottom right, #1f2937, #111827)' }}>
-                                  <video 
-                                    className="w-full h-full object-cover"
-                                    controls
-                                    src={exampleVideo1} 
-                                  />
-                                </div>
-                                <div style={{ fontSize: '24px', color: '#333', marginTop: '10px' }}>
-                                  Processed Video by TrackMate
-                                </div>
-                              </div>
+  {/* Section heading */}
+  <div className="text-center">
+    <h2 className="text-3xl font-bold mb-4 text-black">Check out this example!</h2>
+  </div>
 
-                                {/* Second video and heading */}
-                                <div style={{ textAlign: 'center' }}>
-                                    <div style={{ maxHeight: '25vh', maxWidth: '90vw', overflow: 'hidden', borderRadius: '16px', background: 'linear-gradient(to bottom right, #1f2937, #111827)' }}>
-                                      <video 
-                                        className="w-full h-full object-cover"
-                                        controls
-                                        src={exampleVideo2} 
-                                    />
-                                    </div>
-                            <div style={{ fontSize: '24px', color: '#333', marginTop: '10px' }}>
-                                  Processed Video by TrackMate
-                            </div>
-                          </div>
-                        </div>
+  {/* First video */}
+  <div className="w-full max-w-4xl" style={{ height: '25vh' }}>
+    <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+      <video 
+        className="w-full h-full object-cover"
+        controls
+        src={exampleVideo1} 
+      />
+    </div>
+    <p className="text-center text-xl text-gray-800 mt-2">Processed Video by TrackMate</p>
+  </div>
+
+  {/* Second video */}
+  <div className="w-full max-w-4xl" style={{ height: '25vh' }}>
+    <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+      <video 
+        className="w-full h-full object-cover"
+        controls
+        src={exampleVideo2} 
+      />
+    </div>
+    <p className="text-center text-xl text-gray-800 mt-2">Processed Video by TrackMate</p>
+  </div>
+
+</div>
+
             {/* github link */}
             <section className="github-section">
                 <div className="container text-center">
