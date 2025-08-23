@@ -188,7 +188,7 @@ const TrackMatePage = () => {
                 <div className="mt-24 aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
                     {/* placeholder for video */}
                     <video 
-                        className="w-full h-full object-contain"
+                        className="w-3/4 mx-auto rounded-xl"
                         controls
                         src={exampleVideo1} 
                     />
