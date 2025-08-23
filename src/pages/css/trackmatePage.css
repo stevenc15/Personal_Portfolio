@@ -195,7 +195,130 @@
     box-shadow: var(--hover-shadow);
     color: white;
 }
+/* Examples Section Styles */
+.examples-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
 
+.example-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.example-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.example-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.example-videos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.example-video-item h5 {
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.example-video {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.example-video:hover {
+    transform: scale(1.02);
+}
+
+/* Demo Section Adjustments */
+.demo-section {
+    padding: 80px 0;
+}
+
+.demo-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    border-radius: 8px;
+}
+
+.demo-overlay {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.demo-overlay:hover {
+    transform: scale(1.02);
+}
+
+.play-button {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.demo-overlay p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .examples-section {
+        padding: 60px 0;
+    }
+    
+    .example-card {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .example-title {
+        font-size: 1.3rem;
+    }
+    
+    .demo-overlay {
+        height: 300px;
+    }
+    
+    .play-button {
+        font-size: 3rem;
+    }
+}
 @media (max-width: 992px) {
     .step-left .step-content,
     .step-right .step-content {
@@ -245,4 +368,5 @@
     .demo-placeholder {
         height: 240px;
     }
+
 }
