@@ -181,46 +181,48 @@ const TrackMatePage = () => {
             </section>
             
         {/* Example videos section */}
-            <section className="examples-section">
-                <div className="container">
-                    <div className="section-title">
-                        <h2>Input vs Output Examples</h2>
-                        <div className="underline"></div>
-                    </div>
-                    
-                    <div className="row">
-                        <div className="col-lg-6 mb-4">
-                            <div className="example-card">
-                                <h4 className="example-title">Example 1</h4>
-                                <div className="example-videos">
-                                    <div className="example-video-item">
-                                        <h5>Original Input</h5>
-                                        <video 
-                                            controls 
-                                            className="example-video"
-                                            width="100%"
-                                        >
-                                            <source src={exampleVideo1} type="video/mp4" />
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                    <div className="example-video-item mt-3">
-                                        <h5>Processed Output</h5>
-                                        <video 
-                                            controls 
-                                            className="example-video"
-                                            width="100%"
-                                        >
-                                            <source src={exampleVideo2} type="video/mp4" />
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
+            {/* Example videos section */}
+<section className="examples-section">
+    <div className="container">
+        <div className="section-title">
+            <h2>Input vs Output Example</h2>
+            <div className="underline"></div>
+        </div>
+        
+        <div className="row justify-content-center">
+            <div className="col-lg-8 col-md-10">
+                <div className="example-card">
+                    <h4 className="example-title">Example</h4>
+                    <div className="example-videos">
+                        <div className="example-video-item">
+                            <h5>Original Input</h5>
+                            <video 
+                                controls 
+                                className="example-video"
+                                width="100%"
+                            >
+                                <source src={exampleVideo1} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div className="example-video-item mt-3">
+                            <h5>Processed Output</h5>
+                            <video 
+                                controls 
+                                className="example-video"
+                                width="100%"
+                            >
+                                <source src={exampleVideo1} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
-                </div>                            
-            </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                                            
                                                 
             {/* github link */}
             <section className="github-section">
