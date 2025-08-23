@@ -176,43 +176,78 @@ const TrackMatePage = () => {
                 </div>
             </section>
 
-                <div style={{ color: 'black', fontSize: '32px', fontWeight: 'bold', marginBottom: '20px' }}>
-                    Check out this example!
+            {/* Example videos section */}
+            <section className="examples-section">
+                <div className="container">
+                    <div className="section-title">
+                        <h2>Input vs Output Examples</h2>
+                        <div className="underline"></div>
+                    </div>
+                    
+                    <div className="row">
+                        <div className="col-lg-6 mb-4">
+                            <div className="example-card">
+                                <h4 className="example-title">Example 1</h4>
+                                <div className="example-videos">
+                                    <div className="example-video-item">
+                                        <h5>Original Input</h5>
+                                        <video 
+                                            controls 
+                                            className="example-video"
+                                            width="100%"
+                                        >
+                                            <source src={exampleVideo1} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <div className="example-video-item mt-3">
+                                        <h5>Processed Output</h5>
+                                        <video 
+                                            controls 
+                                            className="example-video"
+                                            width="100%"
+                                        >
+                                            <source src={exampleVideo1} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-6 mb-4">
+                            <div className="example-card">
+                                <h4 className="example-title">Example 2</h4>
+                                <div className="example-videos">
+                                    <div className="example-video-item">
+                                        <h5>Original Input</h5>
+                                        <video 
+                                            controls 
+                                            className="example-video"
+                                            width="100%"
+                                        >
+                                            <source src={exampleVideo2} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <div className="example-video-item mt-3">
+                                        <h5>Processed Output</h5>
+                                        <video 
+                                            controls 
+                                            className="example-video"
+                                            width="100%"
+                                        >
+                                            <source src={exampleVideo2} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                        <div className="flex flex-col items-center mt-12 space-y-8">
-
-  {/* Section heading */}
-  <div className="text-center">
-    <h2 className="text-3xl font-bold mb-4 text-black">Check out this example!</h2>
-  </div>
-
-  {/* First video */}
-  <div className="w-full max-w-4xl" style={{ height: '25vh' }}>
-    <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
-      <video 
-        className="w-full h-full object-cover"
-        controls
-        src={exampleVideo1} 
-      />
-    </div>
-    <p className="text-center text-xl text-gray-800 mt-2">Processed Video by TrackMate</p>
-  </div>
-
-  {/* Second video */}
-  <div className="w-full max-w-4xl" style={{ height: '25vh' }}>
-    <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
-      <video 
-        className="w-full h-full object-cover"
-        controls
-        src={exampleVideo2} 
-      />
-    </div>
-    <p className="text-center text-xl text-gray-800 mt-2">Processed Video by TrackMate</p>
-  </div>
-
-</div>
-
+            </section>
+                                                
             {/* github link */}
             <section className="github-section">
                 <div className="container text-center">
