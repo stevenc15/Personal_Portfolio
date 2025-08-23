@@ -212,7 +212,7 @@ const TrackMatePage = () => {
                                 className="example-video"
                                 width="100%"
                             >
-                                <source src={exampleVideo1} type="video/mp4" />
+                                <source src={exampleVideo2} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
