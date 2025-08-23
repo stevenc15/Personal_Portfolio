@@ -176,11 +176,11 @@ const TrackMatePage = () => {
                 </div>
             </section>
 
-                <div style="font-size: 32px; color: black; font-weight: bold; margin-bottom: 20px;">
+                <div style={{ color: 'black', fontSize: '32px', fontWeight: 'bold', marginBottom: '20px' }}>
                     Check out this example!
                 </div>
 
-                <div style="font-size: 24px; color: #333; margin-bottom: 15px;">
+                <div style=style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
                     Unprocessed Video
                 </div>
 
@@ -194,7 +194,7 @@ const TrackMatePage = () => {
                     />
                </div>
 
-            <div style="font-size: 24px; color: #333; margin-bottom: 15px;">
+            <div style=style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
                     Processed Video by TrackMate
             </div>
 
