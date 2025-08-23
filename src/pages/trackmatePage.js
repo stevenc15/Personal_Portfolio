@@ -180,31 +180,35 @@ const TrackMatePage = () => {
                     Check out this example!
                 </div>
 
-                <div style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
-                    Unprocessed Video
-                </div>
+                        <div className="flex flex-col items-center mt-12 space-y-6">
 
-            <div className="mt-12 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800" style={{ maxWidth: '800px', maxHeight: '450px' }}>
-                <video 
-                    className="w-full h-full object-cover"
-                    controls
-                    src={exampleVideo1} 
-                />
-            </div>
+                            {/* First video and heading */}
+                              <div style={{ textAlign: 'center' }}>
+                                <div style={{ maxHeight: '25vh', maxWidth: '90vw', overflow: 'hidden', borderRadius: '16px', background: 'linear-gradient(to bottom right, #1f2937, #111827)' }}>
+                                  <video 
+                                    className="w-full h-full object-cover"
+                                    controls
+                                    src={exampleVideo1} 
+                                  />
+                                </div>
+                                <div style={{ fontSize: '24px', color: '#333', marginTop: '10px' }}>
+                                  Processed Video by TrackMate
+                                </div>
+                              </div>
 
-            <div style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
-                    Processed Video by TrackMate
-            </div>
-
-            {/* placeholder for demo video */}
-                <div className="mt-24 aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
-                    {/* placeholder for video */}
-                    <video 
-                        className="w-full h-full object-contain"
-                        controls
-                        src={exampleVideo2} 
-                    />
-                </div>
+                                {/* Second video and heading */}
+                                <div style={{ textAlign: 'center' }}>
+                                    <div style={{ maxHeight: '25vh', maxWidth: '90vw', overflow: 'hidden', borderRadius: '16px', background: 'linear-gradient(to bottom right, #1f2937, #111827)' }}>
+                                      <video 
+                                        className="w-full h-full object-cover"
+                                        controls
+                                        src={exampleVideo2} 
+                                    />
+                                    </div>
+                            <div style={{ fontSize: '24px', color: '#333', marginTop: '10px' }}>
+                                  Processed Video by TrackMate
+                            </div>
+                          </div>
 
             {/* github link */}
             <section className="github-section">
