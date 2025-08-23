@@ -180,7 +180,7 @@ const TrackMatePage = () => {
                     Check out this example!
                 </div>
 
-                <div style=style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
+                <div style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
                     Unprocessed Video
                 </div>
 
@@ -194,7 +194,7 @@ const TrackMatePage = () => {
                     />
                </div>
 
-            <div style=style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
+            <div style={{ fontSize: '24px', color: '#333', marginBottom: '15px' }}>
                     Processed Video by TrackMate
             </div>
 
