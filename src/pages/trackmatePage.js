@@ -155,10 +155,12 @@ const TrackMatePage = () => {
                             <div className="demo-card">
                                 <div className="demo-placeholder">
                                     {showDemo ? (
-                                        <div className="ratio ratio-16x9">
+                                        <div className="video-container">
                                             <iframe 
                                                 src="https://www.youtube.com/embed/PibIhiw_kro" 
                                                 title="TrackMate Demo"
+                                                width="100%"
+                                                height="400"
                                             ></iframe>
                                         </div>
                                     ) : (
