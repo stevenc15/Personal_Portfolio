@@ -20,6 +20,11 @@ const projects = [
         description: "An interactive Streamlit dashboard built with American Community Survey (ACS) 5-Year Estimates data.",
         page: "census"
     },
+    {
+        title: "Business Comapnion",
+        description: "A lightweight application that digitizes a small business owner's workflow by replacing manual, paper-based logging with an automated integrated with Google Sheets.",
+        page: "businesscompanion"
+    },
 ];
 
 const ProjectsPage = () => {
