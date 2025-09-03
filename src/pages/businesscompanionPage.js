@@ -18,25 +18,25 @@ const BusinessCompanionPage = () => {
     // steps collection of how project works
     const steps = [
         {
-            image: inputVideoEntered,
+            image: IDselected,
             title: "1. Sign in",
             description: "Sign in with an authorized Gmail account",
             alt: "Video upload interface"
         },
         {
-            image: pickPlayerOption,
+            image: inputVideoEntered,
             title: "2. Activity Dashboard",
             description: "The Activity Dashboard provides the employer a direct look at the centralized Google Sheets file in which all client inspections are logged. The employer has direct access and full control to this Google Sheets file.",
             alt: "Player selection interface"
         },
         {
-            image: trackedFirstFrame,
+            image: pickPlayerOption,
             title: "3. Client Dashboard",
             description: "The Client Dashboard holds all the client records from which the employer is free to modify as they like, and QR codes can be created for each client from this page.",
             alt: "Processed first frame with player IDs"
         },
         {
-            image: IDselected,
+            image: inputVideoNotEntered,
             title: "4. Add Client",
             description: "The employer can directly create client records from here.",
             alt: "Player ID selection interface"
