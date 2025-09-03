@@ -4,6 +4,7 @@ import './css/Home.css';
 import trackmateHome from './trackmate/images/home.png';
 import visualization from './upperlimb/images/visualization.png';
 import start from './upperlimb/images/start.png';
+import bcstart from './trackmate/images/activityDashboard.png';
 
 import { useApp } from '../components/appContext.js';
 
@@ -125,6 +126,14 @@ const HomePage = () => {
                         image: start, // Replace with actual project screenshot
                         githubLink: "https://github.com/stevenc15/Census_Dashboard",
                         page: "census"
+                    },
+                    {
+                        title: "Business Companion",
+                        description: "A lightweight application that digitizes a small business owner's workflow by replacing manual, paper-based logging with an automated integrated with Google Sheets.",
+                        skills: ["React", "Javascript", "Full Stack"],
+                        image: bcstart, // Replace with actual project screenshot
+                        githubLink: "https://github.com/stevenc15/businessCompanion",
+                        page: "businesscompanion"
                     },
                 ].map((project, index) => (
                 <div key={index} className="col-md-4 mb-4">
