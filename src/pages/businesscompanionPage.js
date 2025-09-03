@@ -152,8 +152,8 @@ const BusinessCompanionPage = () => {
                 <div className="container text-center">
                     <div className="github-card">
                         <h3>Explore the Code</h3>
-                        <p>Check out the open-source repository on GitHub to learn more about how TrackMate works.</p>
-                        <a href="https://github.com/stevenc15/TrackMate" 
+                        <p>Check out the open-source repository on GitHub to learn more about how BusinessCompanion works.</p>
+                        <a href="https://github.com/stevenc15/businessCompanion" 
                            className="btn btn-github" 
                            target="_blank" 
                            rel="noopener noreferrer">
