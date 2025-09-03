@@ -8,6 +8,7 @@ import ContactPage from './Contact.js';
 import UpperLimbPage from './upperlimbPage.js';
 import TrackMatePage from './trackmatePage.js';
 import CensusPage from './censusPage.js';
+import BusinessCompanionPage from './businesscompanionPage.js';
 import './css/Layout.css'; // We'll create this CSS file separately
 
 const Layout = () => {
@@ -140,6 +141,7 @@ const Layout = () => {
                 {currentPage === 'trackmate' && <TrackMatePage />}
                 {currentPage === 'upperlimb' && <UpperLimbPage />}
                 {currentPage === 'census' && <CensusPage />}
+                {currentPage === 'businesscompanion' && <BusinessCompanionPage />}
             </main>
             
             
