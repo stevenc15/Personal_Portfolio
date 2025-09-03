@@ -63,13 +63,12 @@ const BusinessCompanionPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2 text-center">
-                            <h1 className="project-title">TrackMate</h1>
+                            <h1 className="project-title">Business Companion</h1>
                             <div className="project-subtitle">
-                                <p className="lead">Innovative solution to highlighting your best skills!</p>
+                                <p className="lead">Lightweight solution to digitize manual logging of employee activities!</p>
                             </div>
                             <p className="project-description">
-                                TrackMate uses the YOLOv5 machine-learning model to track player movements in soccer videos, 
-                                making it easier to create highlights and analyze performance.
+                        {`Business Companion is a lightweight application that digitizes a small business owner's workflow by replacing manual, paper-based logging with an automated integrated with Google Sheets.`}
                             </p>
                         </div>
                     </div>
@@ -85,7 +84,7 @@ const BusinessCompanionPage = () => {
             <section id="features" className="features-section">
                 <div className="container">
                 <div className="section-title">
-                        <h2>What problem is TrackMate solving?</h2>
+                        <h2>What problem is Business Companion solving?</h2>
                         <div className="underline"></div>
                     </div>
                     
@@ -93,9 +92,7 @@ const BusinessCompanionPage = () => {
                         <div className="col-lg-10">
                             <div className="feature-overview">
                                 <p className="text-center mb-5">
-                                    Many players aiming for College or Professional careers in Soccer need to edit their highlight 
-                                    videos to be able to share them with coaches and scouts. Editing requires significant hours when all that is being done 
-                                    is just highlighting which player they are in the video. How can we fix this?
+                                    The small business owner previously tracked and maintained client inspections by hand on paper, leading to a lengthy 20-hour process for organizing and handling the data. How can we improve the efficiancy of this process?
                                 </p>
                             </div>
                         </div>
@@ -109,9 +106,7 @@ const BusinessCompanionPage = () => {
                         <div className="col-lg-10">
                             <div className="feature-overview">
                                 <p className="text-center mb-5">
-                                    TrackMate simplifies player tracking in soccer videos through a straightforward 
-                                    5-step process. Upload your footage, select which player to track, and TrackMate then highlights said player
-                                    for the length of the video in minutes.
+                                    Provides a digital system in which the business owner can manage records fo client inspections via a centralized Google Sheets file, which stores and accepts submissions from employees through the scanning of a client info-linked QR code.
                                 </p>
                             </div>
                         </div>
@@ -152,7 +147,7 @@ const BusinessCompanionPage = () => {
                 <div className="container text-center">
                     <div className="github-card">
                         <h3>Explore the Code</h3>
-                        <p>Check out the open-source repository on GitHub to learn more about how BusinessCompanion works.</p>
+                        <p>Check out the open-source repository on GitHub to learn more about how Business Companion works.</p>
                         <a href="https://github.com/stevenc15/businessCompanion" 
                            className="btn btn-github" 
                            target="_blank" 
